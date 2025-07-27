@@ -51,7 +51,6 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
             } catch (Exception e) {
                 log.error("인증 처리 실패: {}", e.getMessage());
                 sendErrorResponse(response, ErrorCode.INVALID_TOKEN);
-                return;
             }
         }
     }

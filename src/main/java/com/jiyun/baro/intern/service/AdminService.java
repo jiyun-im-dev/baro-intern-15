@@ -20,6 +20,6 @@ public class AdminService {
 
         user.grantAdminRole();
 
-        return new UserResponse(user);
+        return UserResponse.of(user);
     }
 }
